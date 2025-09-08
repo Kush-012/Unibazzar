@@ -1,0 +1,19 @@
+# This is a comment - it will be ignored by Git.
+
+# Ignore a specific file
+.env
+
+# Ignore a directory and all its contents
+/node_modules
+/build
+
+# Ignore all files with a specific extension
+*.log
+*.tmp
+
+# You can also ignore files in a specific directory
+# This ignores any .env file specifically in the 'backend' folder
+backend/.env
+
+# But DO NOT ignore this specific file (negation)
+!public/important.js

@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* UniBazaar Navbar Styles */
+.unibazaar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-brand .brand-icon {
+  width: 28px;
+  height: 28px;
+  margin-left:4px; 
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links li a {
+  color: #2d3436;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  background: #f5f6fa;
+  color: #2563eb;
+}
+
+/* Auth buttons */
+.nav-button {
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.signup {
+  background: #3f76ed;
+  color: white !important;
+}
+
+.signup:hover {
+  background: #2563eb !important;
+  transform: translateY(-2px);
+}
+
+.login {
+  border: 2px solid #3f76ed;
+  color: #2563eb !important;
+  background: transparent;
+}
+
+.login:hover {
+  background: #f5f6fa !important;
+}
+
+.logout {
+  background: #ff7675 !important;
+  color: white !important;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.logout:hover {
+  background: #e84343 !important;
+  transform: translateY(-2px);
+}
+
+/* Profile link */
+.nav-profile {
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.nav-profile a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f5f6fa;
+  color: #6c5ce7 !important;
+}
+
+/* Verified badge */
+.verified-badge {
+  background: #00b894;
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .unibazaar-nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-links li a,
+  .nav-button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
