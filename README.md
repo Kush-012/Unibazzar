@@ -1,23 +1,9 @@
-cd backend
-npm install
+cd backend + npm install → installs all backend dependencies from package.json.
 
-cd frontend
-npm install
+cd frontend + npm install → installs all frontend dependencies from package.json.
 
-Start backend->
+Start backend (cd backend + nodemon) → runs backend server with auto-reload.
 
-In Terminal 1:
-cd backend
-nodemon
+Start frontend (cd frontend + npm start) → launches React frontend on localhost.
 
-This runs your backend server.
-
-Start frontend->
-
-In Terminal 2:
-cd frontend
-npm start
-
-This will launch your React frontend 
-
-add gemini api key and mongo db connection string inside .env file inside backend folder
+Add Gemini API key & MongoDB URI in .env (backend) → securely stores secrets for API and database connection
