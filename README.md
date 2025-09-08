@@ -9,6 +9,6 @@ Start frontend (cd frontend + npm start) → launches React frontend on localhos
 Add Gemini API key & MongoDB URI in .env (backend) → securely stores secrets for API and database connection
 
 
-![Uploading Screenshot 2025-09-08 234505.png…]()
+![Home Page](Screenshot 2025-09-08 234505.png) 
 
 
